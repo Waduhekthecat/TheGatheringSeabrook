@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import '../App.css';
 import styledCom from 'styled-components';
-import Logo from '../imgs/LogoOg.png';
+import Logo from '../imgs/logo-no-bg.png';
 import Background from '../imgs/wood-texture.jpg';
+import Logo1 from '../imgs/LogoOg.png';
 import { Link } from 'react-router-dom';
 
 function Nav() {
@@ -59,13 +60,11 @@ export default Nav;
 // styled components //
 
 const Navbar = styledCom.nav`
-max-height:100px;
 top: 0px;
-position: relative;
+position: fixed;
 background-color: white;
-z-index: 15;
+z-index: 300;
 width: 100%;
-border-bottom: double white;
 `;
 
 const NavLink = styledCom.div`
@@ -78,8 +77,8 @@ text-align: center;
 `;
 
 const NavLogo = styledCom.img`
-width: 200px;
-height: 100px;
+width: 250px;
+height: 70px;
 &:active {
     transform: scale(0.9);
 }

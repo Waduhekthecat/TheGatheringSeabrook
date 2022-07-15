@@ -3,6 +3,7 @@ import '../App.css';
 import Carousel1 from '../imgs/carousel1.png';
 import Carousel2 from '../imgs/carousel2.png';
 import Carousel3 from '../imgs/carousel3.png';
+import Logo from '../imgs/LogoOg.png';
 import FB from '../imgs/facebook-icon.png';
 import IG from '../imgs/instagram-icon.png';
 import styledCom from 'styled-components';
@@ -25,11 +26,15 @@ function Carousel() {
   return (
     <div className="carousel">
    <CarouselWrapper>
-            <div class="fadein">
-                <img id="f3" src={Carousel1} style={{height:'425px', width:'100vw'}} alt=""/>
-                <img id="f2" src={Carousel2} style={{height:'425px', width:'100vw'}} alt=""/>
-                <img id="f1" src={Carousel3} style={{height:'425px', width:'100vw'}} alt=""/>
+            <div>
+                <img src={Logo} style={{height:'425px', width:'100vw'}} alt=""/>
             </div>
+            {/* <div class="fadein">
+                <img id="f3" src={Carousel3} style={{height:'425px', width:'100vw'}} alt=""/>
+                <img id="f2" src={Carousel1} style={{height:'425px', width:'100vw'}} alt=""/>
+                <img id="f1" src={Logo} style={{height:'425px', width:'100vw'}} alt=""/>
+            </div> */}
+
              <Socials>
                  <a href="https://www.facebook.com/TheGatheringSeabrook"><Facebook src={FB} alt="fb"/></a>
                  <a href="https://www.instagram.com/thegatheringseabrook"><Instagram src={IG} alt="ig"/></a>
