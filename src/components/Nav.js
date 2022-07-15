@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import '../App.css';
 import styledCom from 'styled-components';
-import Logo from '../imgs/logo-no-bg.png';
+import Logo from '../imgs/LogoOg.png';
 import Background from '../imgs/wood-texture.jpg';
 import { Link } from 'react-router-dom';
 
@@ -78,8 +78,8 @@ text-align: center;
 `;
 
 const NavLogo = styledCom.img`
-width: 250px;
-height: 75px;
+width: 200px;
+height: 100px;
 &:active {
     transform: scale(0.9);
 }

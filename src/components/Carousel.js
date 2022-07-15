@@ -61,8 +61,6 @@ opacity:70%;
 height:40px;
 width:100px;
 z-index:100;
-&:hover {
-   opacity:75%;
 }
 `;
 
