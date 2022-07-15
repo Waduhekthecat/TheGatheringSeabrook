@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styledCom from 'styled-components';
-import Bg from '../imgs/formBg.jpg';
 import Form from '../components/Form.js';
 import '../App.css';
 
@@ -33,8 +32,8 @@ display:flex;
 box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
 `;
 
+// background-image: url(${Bg});
 const DivBg = styledCom.div`
-background-image: url(${Bg});
 background-repeat: no-repeat;
 background-size: cover;
 background-position-y: 80%;

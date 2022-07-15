@@ -1,6 +1,5 @@
 import * as React from 'react';
 import styledCom from 'styled-components';
-import Bg from '../imgs/formBg.jpg';
 import '../App.css';
 
 function Form() {
@@ -10,8 +9,7 @@ function Form() {
     <FormContainer>
         <FormSection>
         <form>
-            <h2>Contact</h2>
-            <h3></h3>
+            <h1 style={{opacity:'80%'}}>Contact</h1>
             <FormGroup>
             <FormField id="name">
             <input type="text" placeholder="Name" onFocus="addBoxShadow(name)"></input>
@@ -27,7 +25,7 @@ function Form() {
             <input type="text" placeholder="Date"></input>
             </FormField>
             <FormField id="event">
-            <input type="message" placeholder="Event Details"></input>
+            <input type="message" placeholder="Message"></input>
             </FormField>
             <FormField>
             <input type="submit" value="Send"></input>
@@ -61,7 +59,6 @@ box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);
 `;
 
 const FormSection = styledCom.div`
-opacity:80%;
 background-color: white;
 height:100%;
 width:100%;
@@ -77,4 +74,7 @@ margin: 5px 15px;
 align-items:center;
 border-radius:5px;
 padding: 10px 15px;
+opacity:60%;
+font-family: "candara-light";
+font-size:16px;
 `;

@@ -1,3 +1,19 @@
+
+@font-face {
+  font-family: "darloune";
+  src: url('./fonts/darloune/Darloune.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "candara";
+  src: url('./fonts/candara-light/candara-light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
 }
@@ -28,6 +44,8 @@ ul {
 }
 
 h1 {
+  font-family: "darloune";
+  font-weight:400;
   padding: 0;
 }
 

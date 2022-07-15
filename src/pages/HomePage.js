@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Carousel from '../components/Carousel.js';
 import Intro from '../components/Intro.js';
-import Host from '../components/Host.js';
-import Signup from '../components/Signup.js';
 import QuietHours from '../components/Quiet.js';
+import Signup from '../components/Signup.js';
+import Host from '../components/Host.js';
 import Banner from '../imgs/banner.png';
 import Form from '../components/Form.js';
 import styledCom from 'styled-components';
@@ -14,10 +14,12 @@ function HomePage() {
     <div className="App">
       <Carousel />
       <Intro />
-      <Host />
       <QuietHours />
-        <Signup />
-        <Form />
+        <div style={{display:'flex'}}>
+          <Host />
+          <Signup />
+        </div>
+        {/* <Form /> */}
     </div>
   );
 }
