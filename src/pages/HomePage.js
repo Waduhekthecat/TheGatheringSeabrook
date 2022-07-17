@@ -15,7 +15,7 @@ function HomePage() {
       <Carousel />
       <Intro />
       <QuietHours />
-        <div style={{display:'flex'}}>
+        <div style={{display:'flex', width:'80vw', paddingLeft:'10vw'}}>
           <Host />
           <Signup />
         </div>

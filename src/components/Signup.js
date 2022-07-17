@@ -3,7 +3,7 @@ import '../App.css';
 
 function Signup() {
   return (
-    <div className="App" style={{ width: '100%', height: '500px' }}>
+    <div className="App" style={{ width: '90%', height: '500px' }}>
  <Header><h1>Attend</h1></Header>
       <Content>The Gathering hosts a variety of popular events! <br/><br/>
         <a href="">Find an event</a>

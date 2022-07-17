@@ -88,7 +88,7 @@ div[role='alert'] {
 
 .booking-style {
   margin-top: 10%;
-  margin-left:10%;
+  margin-left: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -112,7 +112,8 @@ input {
 
 .fadein img {
   position:absolute;
-  top:0;
+  margin-left:10vw;
+  margin-right:10vw;
   -webkit-animation-name: fade;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-duration: 6s;

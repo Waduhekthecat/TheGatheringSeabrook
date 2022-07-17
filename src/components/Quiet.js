@@ -1,6 +1,6 @@
 import styledCom from 'styled-components';
 import '../App.css';
-import Banner from '../imgs/banner.png';
+import Banner from '../imgs/banner2.png';
 
 function QuietHours() {
   return (
@@ -26,10 +26,11 @@ export default QuietHours;
 
 const BgBanner = styledCom.div`
 position:relative;
-height:350px;
+height:300px;
 width:100%;
 background-image: url(${Banner});
 background-size: cover;
+background-position: center;
 background-repeat: no-repeat;
 `;
 
@@ -38,8 +39,8 @@ position:absolute;
 display: inline-block;
 background-color: white;
 top:150px;
-left:10%;
-right:10%;
+left:10vw;
+right:10vw;
 height:600px;
 font-family: "candara-light";
 font-size:16px;

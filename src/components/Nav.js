@@ -21,7 +21,7 @@ function Nav() {
     };
 
     return (
-        <div>
+        <div style={{background:'white', height:'86px', width:'100vw', position:'fixed', zIndex:'350'}}>
             <Navbar>
                 <ul className="nav-links">
                     <NavLink>
@@ -60,17 +60,18 @@ export default Nav;
 // styled components //
 
 const Navbar = styledCom.nav`
+display:block;
+width: 80vw;
+margin-left: 10vw;
+margin-right: 10vw;
 top: 0px;
-position: fixed;
 background-color: white;
 z-index: 300;
-width: 100%;
 `;
 
 const NavLink = styledCom.div`
 width:120px;
 text-align: center;
-
 &:active {
     transform: scale(0.9);
 }

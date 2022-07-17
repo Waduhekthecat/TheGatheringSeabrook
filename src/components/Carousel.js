@@ -26,18 +26,18 @@ function Carousel() {
   return (
     <div className="carousel">
    <CarouselWrapper>
-            <div>
-                <img src={Logo} style={{height:'425px', width:'100vw'}} alt=""/>
+<div style={{display:'block', height:'425px', width:'80vw', margin:'0 auto'}}>
+  <div class="fadein">
+                <img id="f3" src={Carousel3} style={{marginTop:'86px', display:'block', height:'425px', width:'80vw', margin:'0 auto'}} alt=""/>
+                <img id="f2" src={Carousel1} style={{marginTop:'86px', display:'block', height:'425px', width:'80vw', margin:'0 auto'}} alt=""/>
+                <img id="f1" src={Logo} style={{marginTop:'86px', display:'block', height:'425px', width:'80vw', margin:'0 auto'}} alt=""/>
             </div>
-            {/* <div class="fadein">
-                <img id="f3" src={Carousel3} style={{height:'425px', width:'100vw'}} alt=""/>
-                <img id="f2" src={Carousel1} style={{height:'425px', width:'100vw'}} alt=""/>
-                <img id="f1" src={Logo} style={{height:'425px', width:'100vw'}} alt=""/>
-            </div> */}
-
+            </div>
              <Socials>
+                <div style={{height:'50px', width:'90%', opacity:'.7', backgroundColor:'white'}}>
                  <a href="https://www.facebook.com/TheGatheringSeabrook"><Facebook src={FB} alt="fb"/></a>
                  <a href="https://www.instagram.com/thegatheringseabrook"><Instagram src={IG} alt="ig"/></a>
+                 </div>
              </Socials>
     </CarouselWrapper>
        </div>
@@ -56,16 +56,15 @@ height:425px;
 width:100vw;
 `;
 
+
 const Socials = styledCom.div`
 text-align:center;
 position:absolute;
-right:150px;
-bottom:0px;
-background-color: white;
-opacity:70%;
-height:40px;
+right:15vw;
+bottom:-20px;
+height:50px;
 width:100px;
-z-index:100;
+z-index:200;
 }
 `;
 
@@ -73,13 +72,12 @@ const Facebook = styledCom.img`
 display: inline-block;
 width:30px;
 height:30px;
-padding:7px;
+padding-right:5px;
 transform: translate(0%);
 transition: 0.3s ease-out;
     &:hover {
         transform: scale(1.2) translateY(-15%);
         filter: drop-shadow(0 0 0.1rem teal);
-        opacity:100%;
     }
     &:active {
         transform: scale(1.14) translateY(-5%);
@@ -90,7 +88,6 @@ const Instagram = styledCom.img`
 display: inline-block;
 width:30px;
 height:30px;
-padding:7px;
 z-index:200;
 transition: 0.3s ease-out;
     &:hover {

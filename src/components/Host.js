@@ -3,7 +3,7 @@ import '../App.css';
 
 function Host() {
   return (
-    <div className="App" style={{width: '100%', height: '500px' }}>
+    <div className="App" style={{width: '90%', height: '500px' }}>
  <Content>
 <Header>
 <h1>Host</h1>
@@ -43,9 +43,7 @@ font-family: "candara-light";
 font-size:16px;
 `;
 
-
 const Content2 = styledCom.p`
-opacity:50%;
 opacity:80%;
 font-family: "candara-light";
 font-size:16px;

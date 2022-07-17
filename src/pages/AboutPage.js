@@ -1,11 +1,11 @@
 import * as React from 'react';
 import styledCom from 'styled-components';
 import '../App.css';
-import Banner from '../imgs/banner.png';
+import Banner from '../imgs/banner2.png';
 
 function AboutPage() {
   return (
-    <div style={{ height: '800px', width: '100%', justifyContent: 'center', textAlign: 'center' }}>
+    <div style={{ marginTop:'86px', height: '800px', width: '100%', justifyContent: 'center', textAlign: 'center' }}>
       <BgBanner>
         <Content>
         <Header>
@@ -48,10 +48,11 @@ export default AboutPage;
 
 const BgBanner = styledCom.div`
 position:relative;
-height:350px;
+height:300px;
 width:100%;
 background-image: url(${Banner});
 background-size: cover;
+background-position: center;
 background-repeat: no-repeat;
 `;
 
