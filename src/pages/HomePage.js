@@ -7,6 +7,7 @@ import Host from '../components/Host.js';
 import Banner from '../imgs/banner.png';
 import Form from '../components/Form.js';
 import styledCom from 'styled-components';
+// import Card from '../components/Card.js';
 import '../App.css';
 
 function HomePage() {
@@ -19,7 +20,7 @@ function HomePage() {
           <Host />
           <Signup />
         </div>
-        {/* <Form /> */}
+        <Form />
     </div>
   );
 }

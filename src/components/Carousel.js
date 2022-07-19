@@ -7,6 +7,7 @@ import Logo from '../imgs/LogoOg.png';
 import FB from '../imgs/facebook-icon.png';
 import IG from '../imgs/instagram-icon.png';
 import styledCom from 'styled-components';
+import {device} from '../Device.js';
 
 function Carousel() {
 //   const [carouselImg, setCarouselImg] = useState(Carousel1);
@@ -24,14 +25,11 @@ function Carousel() {
 //   console.log([carouselImg]);
 
   return (
-    <div className="carousel">
    <CarouselWrapper>
-<div style={{display:'block', height:'425px', width:'80vw', margin:'0 auto'}}>
   <div class="fadein">
-                <img id="f3" src={Carousel3} style={{marginTop:'86px', display:'block', height:'425px', width:'80vw', margin:'0 auto'}} alt=""/>
-                <img id="f2" src={Carousel1} style={{marginTop:'86px', display:'block', height:'425px', width:'80vw', margin:'0 auto'}} alt=""/>
-                <img id="f1" src={Logo} style={{marginTop:'86px', display:'block', height:'425px', width:'80vw', margin:'0 auto'}} alt=""/>
-            </div>
+                <Img id="f3" src={Carousel3} style={{marginTop:'91px', display:'block', margin:'0 auto'}} alt=""/>
+                <Img id="f2" src={Carousel1} style={{marginTop:'91px', display:'block', margin:'0 auto'}} alt=""/>
+                <Img id="f1" src={Logo} style={{marginTop:'91px', display:'block', margin:'0 auto'}} alt=""/>
             </div>
              <Socials>
                 <div style={{height:'50px', width:'90%', opacity:'.7', backgroundColor:'white'}}>
@@ -40,7 +38,6 @@ function Carousel() {
                  </div>
              </Socials>
     </CarouselWrapper>
-       </div>
   );
 }
 
@@ -48,12 +45,35 @@ export default Carousel;
 
 // styled components //
 
-
 // need media query
 const CarouselWrapper = styledCom.div`
+text-align: start;
+display:block;
 position:relative;
 height:425px;
-width:100vw;
+width:80vw;
+margin-left:10vw;
+margin-right:10vw;
+
+@media ${device.laptop} { 
+    height: 500px;
+  }
+
+  @media ${device.laptopL} {
+    height: 600px;
+  }
+`;
+
+const Img = styledCom.img`
+height:425px;
+width:80vw;
+@media ${device.laptop} { 
+    height: 500px;
+  }
+
+  @media ${device.laptopL} {
+    height: 600px;
+  }
 `;
 
 

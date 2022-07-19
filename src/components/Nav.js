@@ -21,7 +21,7 @@ function Nav() {
     };
 
     return (
-        <div style={{background:'white', height:'86px', width:'100vw', position:'fixed', zIndex:'350'}}>
+        <div style={{background:'white', height:'85px', width:'100vw', position:'fixed', zIndex:'350'}}>
             <Navbar>
                 <ul className="nav-links">
                     <NavLink>
