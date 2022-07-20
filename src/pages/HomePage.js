@@ -48,34 +48,34 @@ padding-bottom:10%;
   display:block;
   height:600px;
   margin: auto;
-  padding-left:32%;
+  padding-left:31%;
   padding-right:35%;
-  padding-bottom:35%;
+  padding-bottom:45%;
   }
   @media (max-width: 600px) {
-    padding-left:30%;
+    padding-left:27%;
     padding-right:40%;
-    padding-bottom:50%;
+    padding-bottom:60%;
     }
     @media (max-width: 500px) {
-      padding-left:29%;
+      padding-left:24%;
       padding-right:40%;
-      padding-bottom:50%;
+      padding-bottom:65%;
       }
       @media (max-width: 450px) {
-        padding-left:26%;
+        padding-left:20%;
         padding-right:30%;
-        padding-bottom:50%;
+        padding-bottom:75%;
         }
         @media (max-width: 400px) {
-          padding-left:23%;
+          padding-left:16%;
           padding-right:40%;
-          padding-bottom:50%;
+          padding-bottom:85%;
           }
           @media (max-width: 370px) {
-            padding-left:21%;
+            padding-left:14%;
             padding-right:40%;
-            padding-bottom:60%;
+            padding-bottom:90%;
             }
 `;
 

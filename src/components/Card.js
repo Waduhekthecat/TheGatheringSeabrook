@@ -44,7 +44,11 @@ padding-left:30px;
 padding-right:30px;
 padding-top:50px;
 padding-bottom:50px;
-
+@media (max-width: 785px) {
+    height:300px;
+    line-height:300px;
+    width:200px;
+    }
 `;
 
 const InnerWrapper = styledCom.div`

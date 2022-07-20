@@ -160,8 +160,8 @@ background-color: #f0f0f0;
 padding-top:10%;
 opacity:70%;
 @media (max-width: 785px) {
-  padding-left:40%;
-  padding-right:40%;
+  padding-left:20%;
+  padding-right:20%;
   padding-bottom:10%;
   }
 `;
