@@ -87,7 +87,9 @@ TransitionComponent={Transition}
         <DialogBtnTxt onClick={handleDialog}>
           <DialogBtnOuter>
             <DialogBtnInner>
-              <span>Home</span>
+              <Link style={{textDecoration:"none", color:'black'}} to="/">
+                <span>Home</span>
+              </Link>
             </DialogBtnInner>
           </DialogBtnOuter>
         </DialogBtnTxt>
@@ -96,7 +98,9 @@ TransitionComponent={Transition}
         <DialogBtnTxt onClick={handleDialog}>
           <DialogBtnOuter>
             <DialogBtnInner>
-              <span>About</span>
+              <Link style={{textDecoration:"none", color:'black'}} to="/About">
+                <span>About</span>
+              </Link>
             </DialogBtnInner>
           </DialogBtnOuter>
         </DialogBtnTxt>
@@ -105,7 +109,9 @@ TransitionComponent={Transition}
         <DialogBtnTxt onClick={handleDialog}>
           <DialogBtnOuter>
             <DialogBtnInner>
-              <span>Events</span>
+              <Link style={{textDecoration:"none", color:'black'}} to="/Calendar">
+                <span>Events</span>
+              </Link>
             </DialogBtnInner>
           </DialogBtnOuter>
         </DialogBtnTxt>
@@ -114,7 +120,9 @@ TransitionComponent={Transition}
         <DialogBtnTxt onClick={handleDialog}>
           <DialogBtnOuter>
             <DialogBtnInner>
-              <span>Contact</span>
+              <Link style={{textDecoration:"none", color:'black'}} to="/Booking">
+                <span>Contact</span>
+              </Link>
             </DialogBtnInner>
           </DialogBtnOuter>
         </DialogBtnTxt>
@@ -193,7 +201,7 @@ display:none;
 
 
 const ListContainer = styledCom.div`
-background-color: gray;
+background-color: #f0f0f0;
 border: 0;
 width: 100%;
 margin: 0 auto;
@@ -211,7 +219,7 @@ z-index:200;
 
 const DialogUl = styledCom.ul`
 align-text:center;
-background-color:gray;
+background-color: #f0f0f0;
 position: relative;
 display: block;
 font-style: normal;
@@ -246,20 +254,20 @@ box-sizing: border-box;
 align-items:center;
 justify-content:center;
 align-text:center;
-background-color:gray;
+background-color: #f0f0f0;
 `;
 
 const DialogBtnTxt = styledCom.button`
 opacity: 1;
 transform: translate(0, 0);
 font-size: 2em;
-background-color: gray;
+background-color: #f0f0f0;
 border: 0;
 `;
 
 // button background
 const DialogBtnOuter = styledCom.div`
-background-color:gray;
+background-color: #f0f0f0;
 padding-top: 0.5em;
     padding-right: 0.5em;
     padding-bottom: 0.5em;
@@ -280,7 +288,7 @@ padding-top: 0.5em;
 
     // button text
     const DialogBtnInner = styledCom.div`
-    color:white;
+    color:black;
     flex-shrink: 1;
     min-width: 1px;
     max-width: 100%;
@@ -291,7 +299,6 @@ padding-top: 0.5em;
     cursor: pointer;
     &:hover {
       transform: scale(1.1);
-      color:pink;
     }
     `;
 
@@ -299,6 +306,7 @@ padding-top: 0.5em;
 const Menu = styledCom.img.attrs({
     src:menu, alt:'menu'
 })`
+color: #f0f0f0;
 display:none;
 position:absolute; 
 margin-top:10px;
