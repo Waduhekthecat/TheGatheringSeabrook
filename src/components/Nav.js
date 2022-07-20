@@ -56,12 +56,12 @@ function Nav() {
 
                     <NavLink>
                         <Link style={navStyle} to='/Calendar'>
-                            <li style={{ color: 'gray' }}>Calendar</li>
+                            <li style={{ color: 'gray' }}>Events</li>
                         </Link>
                     </NavLink>
                     <NavLink>
                         <Link style={navStyle} to='/Booking'>
-                            <li style={{ color: 'gray' }}>Booking</li>
+                            <li style={{ color: 'gray' }}>Contact</li>
                         </Link>
                     </NavLink>
                 </ul>

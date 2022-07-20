@@ -5,13 +5,13 @@ function Signup() {
   return (
     <div className="App" style={{ width: '90%', height: '500px' }}>
  <Header><h1>Attend</h1></Header>
-      <Content>The Gathering hosts a variety of popular events! <br/><br/>
-        <a href="">Find an event</a>
+      {/* <Content>The Gathering hosts a variety of popular events! <br/><br/>
+        <a href="">Find an event</a> */}
         {/* On our calendar pages you will find current
 offerings. Click on the event in the calendar to register. Pay event fee through Venmo @
 Pamela-Newberry-1 or Zelle @ 281.435.5793 or pamnewberry7@gmail.com or through prior
 arrangement with Pam. Your payment secures your spot! */}
-</Content>
+{/* </Content> */}
         
         
     </div>

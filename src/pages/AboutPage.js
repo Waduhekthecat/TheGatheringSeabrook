@@ -5,7 +5,7 @@ import Banner from '../imgs/banner2.png';
 
 function AboutPage() {
   return (
-    <div style={{ marginTop:'91px', height: '800px', width: '100%', justifyContent: 'center', textAlign: 'center' }}>
+    <div style={{height: '800px', width: '100%', justifyContent: 'center', textAlign: 'center' }}>
       <BgBanner>
         <Content>
         <Header>

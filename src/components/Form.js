@@ -9,7 +9,7 @@ function Form() {
     <FormContainer>
         <FormSection>
         <form>
-            <h1 style={{opacity:'80%'}}>Contact</h1>
+            <h1>CONTACT</h1>
             <FormGroup>
             <FormField id="name">
             <input type="text" placeholder="Name" onFocus="addBoxShadow(name)"></input>
@@ -44,7 +44,7 @@ export default Form;
 
 const Wrapper = styledCom.div`
 display: flex;
-height:600px;
+height:70vh;
 align-items: center;
 justify-content: center;
 background-color: #f0f0f0;
@@ -52,7 +52,8 @@ opacity:70%;
 `;
 
 const FormContainer = styledCom.div`
-width: 500px;
+margin-bottom:10%;
+width: 600px;
 height: 450px;
 display:flex;
 box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.3);

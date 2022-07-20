@@ -5,7 +5,7 @@ import '../App.css';
 
 function BookingPage() {
   return(
-    <div style={{marginTop:'91px'}}class="App">
+    <div class="App">
     <Form />
     </div>
   );

@@ -7,7 +7,10 @@ import Host from '../components/Host.js';
 import Banner from '../imgs/banner.png';
 import Form from '../components/Form.js';
 import styledCom from 'styled-components';
-// import Card from '../components/Card.js';
+import Card from '../components/Card.js';
+import Logo from '../imgs/LogoOg.png';
+import Logo2 from '../imgs/iconweb.png';
+import Events from '../components/Events.js';
 import '../App.css';
 
 function HomePage() {
@@ -16,9 +19,10 @@ function HomePage() {
       <Carousel />
       <Intro />
       <QuietHours />
-        <div style={{display:'flex', width:'80vw', paddingLeft:'10vw'}}>
-          <Host />
-          <Signup />
+      <Events />
+        <div style={{zIndex:1200, display:'flex', width:'80vw', height:'400px', paddingLeft:'10vw', justifyContent:'center', gap:'10vw'}}>
+          <Card innerBackground={Logo2} outerBackground={Logo} title="Attend" />
+          <Card innerBackground={Logo2} outerBackground={Logo} title="Host" />
         </div>
         <Form />
     </div>

@@ -5,7 +5,7 @@ function Intro() {
   return (
     <div className="App" style={{ width: '100%', height: '500px' }}>
       <Header>
-        <h1>Intro</h1>
+        <h1>INTRO</h1>
       </Header>
       <Content>
         The Gathering is a place “teeming with life”—a place of engaging body, soul, mind and spirit in
