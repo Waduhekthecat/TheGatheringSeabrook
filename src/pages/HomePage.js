@@ -21,10 +21,11 @@ function HomePage() {
       <Intro />
       <QuietHours />
       <Events />
-        <div style={{zIndex:1200, display:'flex', width:'80vw', height:'400px', paddingLeft:'10vw', justifyContent:'center', gap:'10vw'}}>
+        <CardWrapper>
           <Link to="/Attend" ><Card innerBackground={Logo2} outerBackground={Logo} title="Attend" /></Link>
+          <br/><br/><br/>
           <Link to="/Host" ><Card innerBackground={Logo2} outerBackground={Logo} title="Host" /></Link>
-        </div>
+        </CardWrapper>
         <Form />
     </div>
   );
@@ -33,6 +34,50 @@ function HomePage() {
 export default HomePage;
 
 // styled components //
+
+const CardWrapper = styledCom.div`
+zIndex:1200;
+display:flex;
+width:98vw;
+height:400px;
+justify-content:center;
+gap:10vw;
+padding-bottom:10%;
+@media (max-width: 785px) {
+  position:relative;
+  display:block;
+  height:600px;
+  margin: auto;
+  padding-left:32%;
+  padding-right:35%;
+  padding-bottom:35%;
+  }
+  @media (max-width: 600px) {
+    padding-left:30%;
+    padding-right:40%;
+    padding-bottom:50%;
+    }
+    @media (max-width: 500px) {
+      padding-left:29%;
+      padding-right:40%;
+      padding-bottom:50%;
+      }
+      @media (max-width: 450px) {
+        padding-left:26%;
+        padding-right:30%;
+        padding-bottom:50%;
+        }
+        @media (max-width: 400px) {
+          padding-left:23%;
+          padding-right:40%;
+          padding-bottom:50%;
+          }
+          @media (max-width: 370px) {
+            padding-left:21%;
+            padding-right:40%;
+            padding-bottom:60%;
+            }
+`;
 
 const BgBanner = styledCom.div`
 position:relative;

@@ -3,7 +3,7 @@ import '../App.css';
 
 function Intro() {
   return (
-    <div className="App" style={{ width: '100%', height: '500px' }}>
+    <Wrapper className="App">
       <Header>
         <h1>INTRO</h1>
       </Header>
@@ -25,13 +25,22 @@ function Intro() {
         Come for connection and belonging!<br/><br/>
         Come to restore body, soul, mind and spirit!
       </Content>
-    </div>
+    </Wrapper>
   )
 };
 
 export default Intro;
 
 // styled components //
+
+const Wrapper = styledCom.div`
+width:100%; 
+height:500px;
+@media (max-width: 785px) {
+  margin-top:45vh; 
+  height:800px;
+}
+`;
 
 const Header = styledCom.h2`
 opacity:80%;
@@ -43,4 +52,8 @@ margin-right:20%;
 opacity:60%;
 font-family: "candara-light";
 font-size:16px;
+@media (max-width: 785px) {
+font-size:20px;}
+margin-left:10%;
+margin-right:10%;
 `;

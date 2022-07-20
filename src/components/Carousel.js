@@ -70,10 +70,15 @@ width:80vw;
 @media ${device.laptop} { 
     height: 500px;
   }
-
   @media ${device.laptopL} {
     height: 600px;
   }
+  @media (max-width: 785px) {
+    position:absolute;
+    left:-75%;
+    width:250vw;
+    height:80vh;
+    }
 `;
 
 
@@ -85,6 +90,9 @@ bottom:-20px;
 height:50px;
 width:100px;
 z-index:200;
+@media (max-width: 785px) {
+  display:none;
+  }
 }
 `;
 

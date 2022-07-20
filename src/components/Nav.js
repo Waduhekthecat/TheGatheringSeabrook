@@ -142,7 +142,7 @@ const Wrapper = styledCom.div`
 width:100vw;
 @media (max-width: 785px) {
     width:100vw;
-    height:50px;
+    height:90px;
     }
 `;
 
@@ -182,9 +182,9 @@ height: 70px;
 const NavLogo2 = styledCom.img`
 display:none;
 @media (max-width: 785px) {
-    padding-top: -40px;
-    width: 200px;
-    height: 60px;
+  margin-top:20px;
+    width: 230px;
+    height: 70px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -303,8 +303,8 @@ display:none;
 position:absolute; 
 margin-top:10px;
 right:3%;
-height:30px; 
-width:30px;
+height:40px; 
+width:40px;
 &:hover {
       transform: scale(1.1);
     transition: 200ms ease-in;
