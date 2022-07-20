@@ -9,7 +9,7 @@ function AboutPage() {
       <BgBanner>
         <Content>
         <Header>
-          <h1>About</h1>
+          <h1>ABOUT</h1>
         </Header>
         <Content2>
         The Gathering came about as a response to the isolation experienced due to the effects of

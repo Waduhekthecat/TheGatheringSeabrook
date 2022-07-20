@@ -9,7 +9,7 @@ function Form() {
     <FormContainer>
         <FormSection>
         <form>
-            <h1>CONTACT</h1>
+            <h1>Contact</h1>
             <FormGroup>
             <FormField id="name">
             <input type="text" placeholder="Name" onFocus="addBoxShadow(name)"></input>

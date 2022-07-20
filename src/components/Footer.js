@@ -13,7 +13,6 @@ function Foot() {
             <a href="https://www.facebook.com/TheGatheringSeabrook"><Facebook src={FB} alt="fb"/></a>
                  <a href="https://www.instagram.com/thegatheringseabrook"><Instagram src={IG} alt="ig"/></a>
             </Socials>
-
         </Footer>
     );
 }

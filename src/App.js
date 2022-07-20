@@ -8,6 +8,8 @@ import Foot from './components/Footer.js';
   import CalendarPage from './pages/CalendarPage.js';
   import AboutPage from './pages/AboutPage.js';
   import BookingPage from './pages/BookingPage.js';
+  import AttendPage from './pages/AttendPage.js';
+  import HostPage from './pages/HostPage.js';
 import styledCom from 'styled-components';
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path="/About" element={<AboutPage/>} />
           <Route path="/Calendar" element={<CalendarPage />} />
           <Route path="/Booking" element={<BookingPage/>} />
+          <Route path="/Attend" element={<AttendPage/>} />
+          <Route path="/Host" element={<HostPage/>} />
         </Routes>
       </Wrapper>
       <Foot/>

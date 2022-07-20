@@ -11,6 +11,8 @@ import Card from '../components/Card.js';
 import Logo from '../imgs/LogoOg.png';
 import Logo2 from '../imgs/iconweb.png';
 import Events from '../components/Events.js';
+import { Link } from 'react-router-dom';
+
 import '../App.css';
 
 function HomePage() {
@@ -21,8 +23,8 @@ function HomePage() {
       <QuietHours />
       <Events />
         <div style={{zIndex:1200, display:'flex', width:'80vw', height:'400px', paddingLeft:'10vw', justifyContent:'center', gap:'10vw'}}>
-          <Card innerBackground={Logo2} outerBackground={Logo} title="Attend" />
-          <Card innerBackground={Logo2} outerBackground={Logo} title="Host" />
+          <Link to="/Attend" ><Card innerBackground={Logo2} outerBackground={Logo} title="Attend" /></Link>
+          <Link to="/Host" ><Card innerBackground={Logo2} outerBackground={Logo} title="Host" /></Link>
         </div>
         <Form />
     </div>

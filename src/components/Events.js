@@ -5,7 +5,7 @@ import Banner from '../imgs/banner2.png';
 function Events() {
   return (
 <div style={{ zIndex:'5000', minHeight:'300px', maxHeight: '300px', width: '100%', justifyContent: 'center', textAlign: 'center' }}>
-      <Header><h1>EVENTS</h1></Header>
+      <Header><h1>Events</h1></Header>
       <Content2>At The Gathering we believe that time to unplug from the noise and the laundry is essential for a
 healthy, vibrant life. As such, we host quiet hours with complimentary coffee and snacks. Cost
 for a visit is only $10. <br/><br/> Donations appreciated for replenishing drinks and snacks. Pretend you
