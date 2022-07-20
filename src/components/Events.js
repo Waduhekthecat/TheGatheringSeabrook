@@ -6,12 +6,8 @@ function Events() {
   return (
 <Wrapper>
       <Header><h1>EVENTS</h1></Header>
-      <Content2>At The Gathering we believe that time to unplug from the noise and the laundry is essential for a
-healthy, vibrant life. As such, we host quiet hours with complimentary coffee and snacks. Cost
-for a visit is only $10. <br/><br/> Donations appreciated for replenishing drinks and snacks. Pretend you
-are in a library setting—Yes! There are even books and magazines? so that all who visit truly
-
-have the space and peace and quiet they have come for.</Content2>
+      <Content2>We offer you an invitation to host or attend an event at The Gathering. Peace amidst chaos and personal growth are attainable. Don't forget to check our upcoming events calendar!  <br/><br/> Choose an option below to learn more.
+</Content2>
     </Wrapper>
       )
 };
@@ -26,13 +22,13 @@ width: 100%;
 justifyContent: center;
 textAlign: center;
 @media (max-width: 785px) {
-  height:60vh;
+  height:30vh;
   }
   @media (max-width: 550px) {
-    height:70vh;
+    height:40vh;
     }
     @media (max-width: 450px) {
-      height:80vh;
+      height:50vh;
       }
 `;
 
@@ -70,11 +66,12 @@ opacity:80%;
 const Content2 = styledCom.p`
 margin-left:20%;
 margin-right:20%;
-opacity:50%;
-opacity:60%;
+opacity:70%;
 font-family: "candara-light";
 font-size:16px;
 @media (max-width: 785px) {
   font-size:20px;
+  margin-left:10%;
+  margin-right:10%;
   }
 `;
