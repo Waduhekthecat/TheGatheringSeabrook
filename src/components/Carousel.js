@@ -85,7 +85,7 @@ width:80vw;
 const Socials = styledCom.div`
 text-align:center;
 position:absolute;
-right:15vw;
+left:15vw;
 bottom:-20px;
 height:50px;
 width:100px;
@@ -100,7 +100,7 @@ const Facebook = styledCom.img`
 display: inline-block;
 width:30px;
 height:30px;
-padding-right:5px;
+padding-left:5px;
 transform: translate(0%);
 transition: 0.3s ease-out;
     &:hover {

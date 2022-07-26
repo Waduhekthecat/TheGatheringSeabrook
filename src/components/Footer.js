@@ -32,7 +32,7 @@ z-index: 100;
 const Socials = styledCom.div`
 text-align: center;
 position:absolute;
-right:0px;
+left:0px;
 bottom:0px;
 background-color: white;
 opacity:70%;
