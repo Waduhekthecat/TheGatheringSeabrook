@@ -24,7 +24,7 @@ function HomePage() {
         <CardWrapper>
           <Link to="/Attend" ><Card innerBackground={Logo2} outerBackground={Logo} title="Attend" /></Link>
           <br/><br/><br/>
-          <Link to="/Host" ><Card innerBackground={Logo2} outerBackground={Logo} title="Host" /></Link>
+          <Link to="/Host" ><Card innerBackground={Logo2} outerBackground={Logo2} title="Host" /></Link>
         </CardWrapper>
         <Form />
     </div>

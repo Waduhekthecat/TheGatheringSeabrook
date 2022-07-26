@@ -6,7 +6,7 @@ function Events() {
   return (
 <Wrapper>
       <Header><h1>EVENTS</h1></Header>
-      <Content2>We offer you an invitation to host or attend an event at The Gathering. Peace amidst chaos and personal growth are attainable. Don't forget to check our upcoming events calendar!  <br/><br/> Choose an option below to learn more.
+      <Content2>We offer you an invitation to join or even host your own event at The Gathering. Peace amidst chaos and personal growth are attainable. Don't forget to check our upcoming events calendar!  <br/><br/> Choose an option below to learn more.
 </Content2>
     </Wrapper>
       )

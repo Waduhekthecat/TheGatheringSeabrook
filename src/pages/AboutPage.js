@@ -5,7 +5,8 @@ import Banner from '../imgs/banner2.png';
 
 function AboutPage() {
   return (
-    <div style={{height: '800px', width: '100%', justifyContent: 'center', textAlign: 'center' }}>
+    <div className="App">
+    <Wrapper>
       <BgBanner>
         <Content>
         <Header>
@@ -38,6 +39,7 @@ The Gathering is a place to elevate.
         </Content2>
         </Content>
       </BgBanner>
+    </Wrapper>
     </div>
   );
 }
@@ -45,6 +47,17 @@ The Gathering is a place to elevate.
 export default AboutPage;
 
 // styled components //
+
+const Wrapper = styledCom.div`
+height:850px;
+width:100vw;
+justify-content:center;
+align-items:center;
+@media (max-width: 785px) {
+height:1200px;
+  }
+`;
+
 
 const BgBanner = styledCom.div`
 position:relative;
@@ -76,4 +89,8 @@ margin-right:20%;
 opacity:60%;
 font-family: "candara-light";
 font-size:16px;
+@media (max-width: 785px) {
+font-size:20px;
+margin-left:10%;
+margin-right:10%;  }
 `;
