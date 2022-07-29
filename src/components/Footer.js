@@ -3,16 +3,23 @@ import '../App.css';
 import styledCom from 'styled-components';
 import FB from '../imgs/facebook-icon.png';
 import IG from '../imgs/instagram-icon.png';
-import { Link } from 'react-router-dom';
+import { PopupWidget } from "react-calendly";
 
 function Foot() {
 
     return (
         <Footer>
             <Socials>
-            <a href="https://www.facebook.com/TheGatheringSeabrook"><Facebook src={FB} alt="fb"/></a>
-                 <a href="https://www.instagram.com/thegatheringseabrook"><Instagram src={IG} alt="ig"/></a>
+                <a href="https://www.facebook.com/TheGatheringSeabrook"><Facebook src={FB} alt="fb"/></a>
+                <a href="https://www.instagram.com/thegatheringseabrook"><Instagram src={IG} alt="ig"/></a>
             </Socials>
+            <PopupWidget
+            url="https://calendly.com/thegatheringseabrook/consultation"
+            rootElement={document.getElementById("root")}
+            text="Schedule a consultation!"
+            textColor="#333333"
+            color="#ffd7a0"
+            />
         </Footer>
     );
 }

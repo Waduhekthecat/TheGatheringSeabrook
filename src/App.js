@@ -4,13 +4,14 @@ import './App.css';
 import './index.css';
 import Nav from './components/Nav.js';
 import Foot from './components/Footer.js';
-  import HomePage from './pages/HomePage.js';
-  import CalendarPage from './pages/CalendarPage.js';
-  import AboutPage from './pages/AboutPage.js';
-  import BookingPage from './pages/BookingPage.js';
-  import AttendPage from './pages/AttendPage.js';
-  import HostPage from './pages/HostPage.js';
+import HomePage from './pages/HomePage.js';
+import CalendarPage from './pages/CalendarPage.js';
+import AboutPage from './pages/AboutPage.js';
+import BookingPage from './pages/BookingPage.js';
+import AttendPage from './pages/AttendPage.js';
+import HostPage from './pages/HostPage.js';
 import styledCom from 'styled-components';
+import { PopupWidget } from "react-calendly";
 
 function App() {
   return (
